@@ -6,6 +6,18 @@
   @apply bg-primary h-full;
 }
 
+/* @see https://blog.marclucraft.co.uk/masonry-layout-with-tailwindcss */
+@layer utilities {
+  @variants responsive {
+    .masonry {
+      column-count: 4;
+    }
+    .break-inside {
+      break-inside: avoid;
+    }
+  }
+}
+
 html,
 body {
   @apply h-full;
