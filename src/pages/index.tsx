@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AdBanner from "../components/ADBanner";
 import { CardPost } from "../components/CardPost";
 import { Layout } from "../components/Layout";
 
@@ -26,6 +27,7 @@ const HomePage: React.FC = () => {
           authorOffice="Editor"
           slug="/post/o-inicio-do-blog/"
         />
+        <AdBanner />
       </div>
     </Layout>
   );
