@@ -8,15 +8,9 @@ export async function getStaticPaths() {
   const getPostsService = new GetPostsService();
   const posts = await getPostsService.execute();
 
-  console.log(posts.cids);
-
   return {
-    paths: posts.cids.map((doc) => {
-      return {
-        params: {
-          slug: doc.slug,
-        },
-      };
+    paths: posts.map((doc) => {
+      return { params: { slug: doc.slug } };
     }),
     fallback: false,
   };
@@ -26,8 +20,10 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
   const getPostService = new GetPostService();
   const getPostsService = new GetPostsService();
   const posts = await getPostsService.execute();
+  console.log(posts.find((post) => post.slug === params.slug));
+
   const doc = await getPostService.execute(
-    posts.cids.find((post) => post.slug === params.slug).cid
+    posts.find((post) => post.slug === params.slug).cid
   );
 
   return { props: { source: doc } };

@@ -4,22 +4,51 @@ import { PostDTO } from "../dtos/PostDTO";
 import { IGetPostsService } from "../models/IGetPostsService";
 
 export class GetPostsService implements IGetPostsService {
-  public async execute(): Promise<{ cids: PostDTO[] }> {
+  public async execute(): Promise<PostDTO[]> {
     const node = await IPFS.create();
 
     let data = "";
+    const posts: PostDTO[] = [];
 
-    const stream = node.cat(appConfig.CID_POSTS);
+    for await (const dirObj of node.ls(appConfig.CID_POSTS)) {
+      for await (const file of node.ls(dirObj.path)) {
+        if (file.name === "index.json") {
+          const idx = posts.findIndex((post) => post.slug === dirObj.name);
 
-    for await (const chunk of stream) {
-      // chunks of data are returned as a Buffer, convert it back to a string
-      data += chunk.toString();
+          const stream = node.cat(file.cid);
+          for await (const chunk of stream) {
+            data += chunk.toString();
+          }
+
+          const jsonCID: PostDTO = JSON.parse(data);
+          if (idx > -1) {
+            posts[idx] = { ...jsonCID, cid: posts[idx].cid };
+          } else {
+            posts.push(jsonCID);
+          }
+
+          data = "";
+        }
+        if (file.name === "index.md") {
+          const idx = posts.findIndex((post) => post.slug === dirObj.name);
+          if (idx > -1) {
+            // @ts-ignore
+            posts[idx] = { ...posts[idx], cid: file.cid.toString() };
+          } else {
+            posts.push({
+              cid: file.cid.toString(),
+              slug: dirObj.name,
+              name: "",
+              description: "",
+              photo: "",
+            });
+          }
+        }
+      }
     }
-
-    const jsonCID: { cids: PostDTO[] } = JSON.parse(data);
 
     await node.stop();
 
-    return jsonCID;
+    return posts;
   }
 }
