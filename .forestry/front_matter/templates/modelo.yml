@@ -1,4 +1,11 @@
 ---
 label: Modelo
 hide_body: true
-fields: []
+fields:
+- name: imagem_do_post
+  type: blocks
+  label: Imagem do post
+  template_types: []
+  config:
+    min: 
+    max: 
