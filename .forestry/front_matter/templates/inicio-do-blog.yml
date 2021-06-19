@@ -24,7 +24,7 @@ fields:
       type: documents
       section: pessoas
       file: _peoples/VictorAugusto.yml
-      path: 
+      path: VictorAugusto
   label: autor
   description: Nome do autor que está publicando o artigo
 pages:
