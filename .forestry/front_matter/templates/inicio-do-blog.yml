@@ -2,7 +2,7 @@
 label: blog-post
 hide_body: false
 fields:
-- name: image_post
+- name: imagePost
   type: file
   config:
     maxSize: 64
