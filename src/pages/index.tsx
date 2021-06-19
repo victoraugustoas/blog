@@ -23,7 +23,7 @@ const HomePage: React.FC<Props> = ({ posts }) => {
           return (
             <CardPost
               title={post.title}
-              description={"post.description"}
+              description={post.description}
               // authorImage={}
               // authorName={}
               // authorOffice="Editor"
