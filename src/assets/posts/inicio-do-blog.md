@@ -1,12 +1,11 @@
 ---
-image_post: "/uploads/brett-jordan-e1por_sgvje-unsplash.jpg"
+imagePost: "/uploads/brett-jordan-e1por_sgvje-unsplash.jpg"
 title: Início do blog
 authorName: _peoples/VictorAugusto.yml
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis
   tincidunt lectus et luctus. Vestibulum semper hendrerit bibendum. Vivamus lacinia
   ex.
 
----
 # O início do blog gente!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut egestas nibh, eget convallis urna. Aliquam ac enim a purus consequat ultricies. Nam ac arcu turpis. Donec facilisis nulla et suscipit faucibus. Sed lobortis velit vel nulla malesuada sollicitudin. Quisque in tellus id sem lobortis tincidunt vitae vitae velit. Aenean finibus leo justo, sit amet porta orci egestas a. Ut lacus metus, cursus sit amet varius ac, dapibus viverra tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales facilisis sem, sit amet facilisis ante volutpat eget. Ut sit amet ultricies tellus. Quisque malesuada nisi finibus leo porttitor, quis facilisis urna suscipit. Ut pretium vulputate scelerisque. Pellentesque lobortis nisi ut sem tincidunt facilisis.

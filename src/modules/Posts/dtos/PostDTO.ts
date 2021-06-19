@@ -1,7 +1,5 @@
 export interface PostDTO {
-  cid: string;
-  name: string;
+  title: string;
+  imagePost: string;
   slug: string;
-  description?: string;
-  photo?: string;
 }

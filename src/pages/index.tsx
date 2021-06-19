@@ -22,12 +22,12 @@ const HomePage: React.FC<Props> = ({ posts }) => {
         {posts.map((post) => {
           return (
             <CardPost
-              title={post.name}
-              description={post.description}
+              title={post.title}
+              description={"post.description"}
               // authorImage={}
               // authorName={}
               // authorOffice="Editor"
-              imagePost={post.photo}
+              imagePost={post.imagePost}
               slug={`/post/${post.slug}`}
               key={post.slug}
             />
