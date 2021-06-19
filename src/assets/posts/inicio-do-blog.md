@@ -4,6 +4,7 @@ title: Início do blog
 authorName: _peoples/VictorAugusto.yml
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis
   tincidunt lectus et luctus. Vestibulum semper hendrerit bibendum. **Vivamus**.
+author: _peoples/VictorAugusto.yml
 
 ---
 # O início do blog gente!
