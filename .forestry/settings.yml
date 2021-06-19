@@ -9,6 +9,7 @@ sections:
   label: pessoas
   create: all
   match: "**/*"
+  new_doc_ext: ".yml"
   templates:
   - pessoa
 - type: directory
