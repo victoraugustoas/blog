@@ -21,7 +21,7 @@ fields:
     required: true
     options: []
     source:
-      type: simple
+      type: page
       section: authors
       file: data/authors.yml
       path: 
