@@ -1,5 +1,5 @@
 ---
-label: Início do blog
+label: blog-post
 hide_body: false
 fields:
 - name: image_post
@@ -14,5 +14,18 @@ fields:
     required: false
   label: Título
   description: Título do post no blog
+- name: authorName
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: autor
+  description: Nome do autor que está publicando o artigo
 pages:
 - src/assets/posts/inicio-do-blog.md
