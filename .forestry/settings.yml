@@ -9,6 +9,7 @@ sections:
   label: _data
   create: documents
   match: "**/*"
+  new_doc_ext: ".yml"
 - type: directory
   path: src/assets/posts
   label: blog posts
