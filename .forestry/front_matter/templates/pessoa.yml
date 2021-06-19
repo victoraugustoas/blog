@@ -15,5 +15,4 @@ fields:
   label: Autor foto
   description: Foto do autor
 pages:
-- _peoples/VictorAugusto.md
 - _peoples/VictorAugusto.yml
