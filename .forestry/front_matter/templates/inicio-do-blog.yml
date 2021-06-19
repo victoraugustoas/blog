@@ -14,7 +14,7 @@ fields:
     required: false
   label: Título
   description: Título do post no blog
-- name: authorName
+- name: author
   type: select
   default: ''
   config:
