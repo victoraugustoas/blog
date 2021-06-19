@@ -15,5 +15,19 @@ fields:
     maxSize: 64
   label: Autor foto
   description: Foto do autor
+- name: authorOffice
+  type: select
+  default: Editor
+  config:
+    required: false
+    options:
+    - Editor
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: cargo
+  description: Cargo do autor
 pages:
 - _peoples/VictorAugusto.yml
