@@ -21,9 +21,9 @@ fields:
     required: true
     options: []
     source:
-      type: page
-      section: authors
-      file: data/authors.yml
+      type: documents
+      section: pessoas
+      file: 
       path: 
   label: autor
   description: Nome do autor que está publicando o artigo
