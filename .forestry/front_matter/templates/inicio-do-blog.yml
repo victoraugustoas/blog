@@ -16,9 +16,9 @@ fields:
   description: Título do post no blog
 - name: authorName
   type: select
-  default: []
+  default: ''
   config:
-    required: false
+    required: true
     options: []
     source:
       type: simple
