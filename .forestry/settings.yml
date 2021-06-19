@@ -9,7 +9,7 @@ sections:
   label: blog posts
   create: all
   match: "**/*"
-upload_dir: src/assets/media
+upload_dir: public/uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
