@@ -11,7 +11,18 @@ author: _peoples/VictorAugusto.yml
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut egestas nibh, eget convallis urna. Aliquam ac enim a purus consequat ultricies. Nam ac arcu turpis. Donec facilisis nulla et suscipit faucibus. Sed lobortis velit vel nulla malesuada sollicitudin. Quisque in tellus id sem lobortis tincidunt vitae vitae velit. Aenean finibus leo justo, sit amet porta orci egestas a. Ut lacus metus, cursus sit amet varius ac, dapibus viverra tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales facilisis sem, sit amet facilisis ante volutpat eget. Ut sit amet ultricies tellus. Quisque malesuada nisi finibus leo porttitor, quis facilisis urna suscipit. Ut pretium vulputate scelerisque. Pellentesque lobortis nisi ut sem tincidunt facilisis.
 
-Phasellus et lacus leo. Sed scelerisque efficitur diam, aliquam hendrerit nisl gravida egestas. Etiam tincidunt pretium mauris eget laoreet. Vestibulum viverra a justo tincidunt accumsan. Maecenas ipsum arcu, eleifend a placerat at, semper et odio. Suspendisse commodo varius feugiat. Proin condimentum, magna sed interdum scelerisque, ex mauris ornare tellus, non suscipit nisl sapien eu est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In quam elit, pharetra sed accumsan accumsan, vestibulum ut nunc. Curabitur hendrerit turpis vitae lorem lobortis mollis. Pellentesque a orci eleifend tortor scelerisque tristique fringilla quis neque.
+![](/uploads/piotr-zdzieblowski-mw7pu67aoug-unsplash.jpg)
+
+**Phasellus et lacus leo. Sed scelerisque efficitur diam, aliquam hendrerit nisl gravida egestas.** Etiam tincidunt pretium mauris eget laoreet. Vestibulum viverra a justo tincidunt accumsan. Maecenas ipsum arcu, eleifend a placerat at, semper et odio. Suspendisse commodo varius feugiat. Proin condimentum, magna sed interdum scelerisque, ex mauris ornare tellus, non suscipit nisl sapien eu est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In quam elit, pharetra sed accumsan accumsan, vestibulum ut nunc. Curabitur hendrerit turpis vitae lorem lobortis mollis. **_Pellentesque_** a _orci_ eleifend tortor scelerisque tristique fringilla quis neque.
+
+[check out!](google.com)
+
+> Testando
+>
+> Assinado por: Victor
+
+    const soma = 1+3
+    console.log(soma);
 
 Pellentesque iaculis nunc eget lorem blandit, sit amet convallis velit dignissim. Proin malesuada sapien sed pellentesque lobortis. Donec in viverra nunc. Etiam facilisis nunc diam, nec volutpat sem faucibus sit amet. Morbi ornare quam sed lacinia porta. Praesent eget tincidunt sapien. Aenean feugiat purus a dolor interdum finibus. Vivamus efficitur luctus lacus, quis congue dolor vehicula in. Sed dui libero, tincidunt id velit sit amet, laoreet luctus tortor. Donec ut lorem blandit, porta urna fermentum, rhoncus urna. Phasellus vel fermentum ante. Ut ac libero at sapien sollicitudin porta. Sed pharetra diam at justo sagittis, et luctus enim imperdiet.
 
