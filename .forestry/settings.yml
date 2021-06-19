@@ -9,11 +9,15 @@ sections:
   label: pessoas
   create: all
   match: "**/*"
+  templates:
+  - pessoa
 - type: directory
   path: src/assets/posts
   label: blog posts
   create: all
   match: "**/*"
+  templates:
+  - inicio-do-blog
 upload_dir: public/uploads
 public_path: "/uploads"
 front_matter_path: ''
