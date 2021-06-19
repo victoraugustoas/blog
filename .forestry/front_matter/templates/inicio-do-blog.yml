@@ -1,4 +1,16 @@
 ---
 label: Início do blog
 hide_body: false
-fields: []
+fields:
+- name: image_post
+  type: file
+  config:
+    maxSize: 64
+  label: Imagem do post
+  description: Imagem do post
+- name: title
+  type: text
+  config:
+    required: false
+  label: Título
+  description: Título do post no blog
