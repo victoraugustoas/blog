@@ -21,9 +21,9 @@ fields:
     required: true
     options: []
     source:
-      type: documents
-      section: blog-posts
-      file: src/assets/posts/inicio-do-blog.md
+      type: page
+      section: authors
+      file: .forestry/authors.yml
       path: 
   label: autor
   description: Nome do autor que está publicando o artigo
