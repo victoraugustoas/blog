@@ -21,10 +21,10 @@ fields:
     required: true
     options: []
     source:
-      type: documents
+      type: pages
       section: pessoas
-      file: _peoples/VictorAugusto.yml
-      path: VictorAugusto
+      file: 
+      path: ''
   label: autor
   description: Nome do autor que está publicando o artigo
 pages:
