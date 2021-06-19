@@ -24,23 +24,15 @@ const HomePage: React.FC<Props> = ({ posts }) => {
             <CardPost
               title={post.title}
               description={post.description}
-              // authorImage={}
-              // authorName={}
-              // authorOffice="Editor"
+              authorImage={post.authorImage}
+              authorName={post.name}
+              authorOffice={post.authorOffice}
               imagePost={post.imagePost}
               slug={`/post/${post.slug}`}
               key={post.slug}
             />
           );
         })}
-
-        {/* <CardPost
-          title="The first signs of alcoholic liver damage are not in the liver"
-          authorImage="https://avatars.githubusercontent.com/u/38368198?v=4"
-          authorName="Victor Augusto"
-          authorOffice="Editor"
-          slug="/post/o-inicio-do-blog/"
-        /> */}
       </div>
     </Layout>
   );
