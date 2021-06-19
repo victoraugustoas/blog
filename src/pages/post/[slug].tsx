@@ -20,10 +20,9 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
   const getPostService = new GetPostService();
   const getPostsService = new GetPostsService();
   const posts = await getPostsService.execute();
-  console.log(posts.find((post) => post.slug === params.slug));
 
   const doc = await getPostService.execute(
-    posts.find((post) => post.slug === params.slug).cid
+    posts.find((post) => post.slug === params.slug).slug
   );
 
   return { props: { source: doc } };

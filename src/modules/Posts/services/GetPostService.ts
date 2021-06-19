@@ -1,21 +1,17 @@
-import IPFS from "ipfs-core";
+import fs from "fs";
+import matter from "gray-matter";
+import path from "path";
 import { IGetPostService } from "../models/IGetPostService";
 
 export class GetPostService implements IGetPostService {
-  public async execute(cid: string): Promise<string> {
-    const node = await IPFS.create();
+  public execute(slug: string): string {
+    const pathPosts = path.join(process.cwd(), "src", "assets", "posts");
 
-    let data = "";
-
-    const stream = node.cat(cid);
-
-    for await (const chunk of stream) {
-      // chunks of data are returned as a Buffer, convert it back to a string
-      data += chunk.toString();
-    }
-
-    await node.stop();
-
-    return data;
+    const fileName = fs
+      .readdirSync(pathPosts)
+      .find((fileName) => fileName.includes(slug));
+    const fileData = fs.readFileSync(path.join(pathPosts, fileName), "utf8");
+    const { content } = matter(fileData);
+    return content;
   }
 }
