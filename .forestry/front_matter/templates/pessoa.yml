@@ -1,4 +1,16 @@
 ---
-label: Pessoa
+label: Autor
 hide_body: false
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: nome
+  description: Nome do autor
+- name: authorImage
+  type: file
+  config:
+    maxSize: 64
+  label: Autor foto
+  description: Foto do autor
