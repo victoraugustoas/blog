@@ -23,7 +23,7 @@ fields:
     source:
       type: page
       section: authors
-      file: data/authors.yml
+      file: authors.yml
       path: 
   label: autor
   description: Nome do autor que está publicando o artigo
